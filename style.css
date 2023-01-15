@@ -36,6 +36,11 @@ body{
     text-decoration: none;
     color: #fff;
 }
+.common-heading{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+}
 
 /* Header */
 /* Nav */
@@ -47,11 +52,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.heading{
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 53px;
-}
+
 nav div ul{
     list-style: none;
 }
@@ -68,7 +69,7 @@ nav div ul li{
 /* banner */
 
 .banner-description{
-    padding: 0 529px;
+    padding: 0 525px;
     text-align: center;
 }
 .banner-heading{
@@ -89,22 +90,41 @@ nav div ul li{
     width: 100%;
 }
 
+/* Quick list section */
+.quick-list{
+    align-items: center;
+    padding: 100px 295px;
+    flex: 1;
+    gap: 76px;
+}
+.quick-list-image-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.quick-list-para{
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
 /* Responsive for Phone */
 
 @media only screen and (max-width: 576px),(min-width: 576px) and (max-width: 768px) {
+    /* header */
     header{
         width: 100vw;
     }
     .nav,nav div ul{
         padding: 20px;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
     .heading{
         font-size: 30px;
         line-height: 53px;
         padding-top: 30px;
     }
+    /* banner */
     .banner-description{
         padding: 0 30px;
     }
@@ -124,7 +144,21 @@ nav div ul li{
     .explore-button{
         padding: 10px 13px;
         font-size: 16px;
-    }   
+    } 
+    
+    /* Quick list */
+    .quick-list{
+        padding: 30px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .quick-list-image-box{
+        grid-template-columns: repeat(1,1fr);
+        gap: 15px;
+    }
+    .quick-list-description{
+        text-align: center;
+    }
 }
 
 /* Responsive for Rotate Phone */
