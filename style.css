@@ -3,3 +3,87 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Common css */
+.flex{
+    display: flex;
+}
+.dark-1{
+    color: #131313;
+}
+.dark-2{
+    color: #424242; 
+}
+.dark-3{
+    color: #727272; 
+}
+.orrange{
+    color: #FF900E; 
+}
+.explore-button{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    background: #FF900E;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
+}
+.explore-button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header */
+/* Nav */
+header{
+    background: rgba(255, 144, 14, 0.1);
+}
+.nav{
+    padding: 50px 190px 100px 228px;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+}
+nav div ul{
+    list-style: none;
+}
+nav div ul li a{
+    text-decoration: none;
+}
+nav div ul li{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 0 50px;
+}
+
+/* banner */
+
+.banner-description{
+    padding: 0 529px;
+    text-align: center;
+}
+.banner-heading{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.banner-para{
+    margin: 33px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.banner-img{
+    padding: 50px;
+    text-align: center;
+}
