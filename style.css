@@ -86,4 +86,54 @@ nav div ul li{
 .banner-img{
     padding: 50px;
     text-align: center;
+    width: 100%;
+}
+
+/* Responsive for Phone */
+
+@media only screen and (max-width: 576px),(min-width: 576px) and (max-width: 768px) {
+    header{
+        width: 100vw;
+    }
+    .nav,nav div ul{
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .heading{
+        font-size: 30px;
+        line-height: 53px;
+        padding-top: 30px;
+    }
+    .banner-description{
+        padding: 0 30px;
+    }
+    .banner-heading{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .banner-para{
+        margin: 20px 0;
+    }
+    .banner-img{
+        padding: 30px 10px;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .explore-button{
+        padding: 10px 13px;
+        font-size: 16px;
+    }   
+}
+
+/* Responsive for Rotate Phone */
+
+@media only screen and (min-width: 576px) and (max-width: 768px){   
+    nav div ul{
+        flex-direction: row;
+    }
+    nav div ul li{
+        padding: 0 20px;
+    }
 }
