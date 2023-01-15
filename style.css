@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body,a{
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -41,7 +41,13 @@ body{
     font-size: 45px;
     line-height: 53px;
 }
-
+.common-para{
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+.container{
+    padding: 0px 240px;
+}
 /* Header */
 /* Nav */
 header{
@@ -102,9 +108,57 @@ nav div ul li{
     grid-template-columns: repeat(2,1fr);
     gap: 24px;
 }
-.quick-list-para{
-    margin-top: 24px;
-    margin-bottom: 32px;
+
+
+/* Feature */
+.feature{
+    flex: 1;
+}
+.feature-description{
+    margin-right: 145px;
+    padding-top: 50px;
+}
+.feature-heading{
+    padding: 0 100px 0 21px;
+    border-left: 5px solid #FF900E;
+}
+.feature-box-container{
+    display: grid;
+    gap: 20px;
+}
+.feature-box{
+    padding: 30px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+.feature-box h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 10px;
+}
+.feature-btn{
+    padding: 45px 42px;
+    background: #FF900E;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+}
+.feature-btn a .span-1{
+    font-weight: 700;
+    font-size: 65px;
+}
+.feature-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.feature-btn a .span-2{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+}
+.feature-btn-div{
+    transform: translate(-11%,-70%);
 }
 
 /* Responsive for Phone */
