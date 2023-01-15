@@ -46,11 +46,12 @@ body,a{
     margin-bottom: 32px;
 }
 .container{
-    padding: 0px 240px;
+    margin-left: 240px;
+    margin-right: 240px;
 }
 /* Header */
 /* Nav */
-header{
+header,footer{
     background: rgba(255, 144, 14, 0.1);
 }
 .nav{
@@ -109,6 +110,11 @@ nav div ul li{
     gap: 24px;
 }
 
+/* Facts */
+.facts-para{
+    margin-right: 880px;
+}
+
 
 /* Feature */
 .feature{
@@ -161,9 +167,37 @@ nav div ul li{
     transform: translate(-11%,-70%);
 }
 
+/* Sponser */
+
+.sponser{
+    text-align: center;
+}
+.sponser-para{
+    padding: 0 450px 20px;
+}
+.sponser-div{
+    margin-bottom: 170px;
+    justify-content: space-between;
+    align-items: center;
+}
+.sponser-div img{
+    filter: grayscale(100%);
+}
+
+/* Footer */
+footer{
+    margin-bottom: 216px;
+    padding: 40px 410px;
+    border-radius: 8px;
+}
+
 /* Responsive for Phone */
 
 @media only screen and (max-width: 576px),(min-width: 576px) and (max-width: 768px) {
+    .container{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
     /* header */
     header{
         width: 100vw;
@@ -173,9 +207,8 @@ nav div ul li{
         flex-direction: column;
         align-items: center;
     }
-    .heading{
+    .common-heading{
         font-size: 30px;
-        line-height: 53px;
         padding-top: 30px;
     }
     /* banner */
@@ -213,6 +246,68 @@ nav div ul li{
     .quick-list-description{
         text-align: center;
     }
+
+    /* feature */
+
+    .feature{
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-description{
+        margin-right: 0px;
+    }
+    .feature-heading{
+
+        padding: 0 20px;
+    }
+    .feature-box-container{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .feature-btn{
+        padding: 10px 13px;
+    }
+    .feature-btn a .span-1{
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .feature-btn a .span-2{
+        font-size: 20px;
+    }
+    .feature-btn-div{
+        transform: translate(0,0);
+        text-align: center;
+        padding: 20px 0;
+    }
+    .feature-img img{
+        width: 100%;
+    }
+
+    /* Facts */
+    
+
+    /* sponser */
+    .sponser-para{
+        padding: 0 20px;
+    }
+    .sponser-div{
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sponser-div img{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer{
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
 }
 
 /* Responsive for Rotate Phone */
