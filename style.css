@@ -51,7 +51,7 @@ body,a{
 }
 /* Header */
 /* Nav */
-header,footer{
+header,footer,.contact-us-form{
     background: rgba(255, 144, 14, 0.1);
 }
 .nav{
@@ -219,8 +219,30 @@ nav div ul li{
     filter: grayscale(100%);
 }
 
+/* Contact Us */
+.contact-us{
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+.contact-us-form{
+    padding: 30px 100px;
+    text-align: left;
+
+}
+label,input,textarea{
+    padding: 10px;
+    margin: 10px;
+}
+input,textarea{
+    width: 100%;
+}
+.form-btn{
+    color: #fff;
+}
 /* Footer */
 footer{
+    margin-top: 150px;
     margin-bottom: 216px;
     padding: 40px 410px;
     border-radius: 8px;
@@ -349,6 +371,7 @@ footer{
     /* Footer */
     footer{
         text-align: center;
+        margin-top: 20px;
         margin-bottom: 20px;
         padding: 20px;
         border-radius: 8px;
