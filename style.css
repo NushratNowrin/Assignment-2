@@ -124,6 +124,8 @@ nav div ul li{
     text-align: center;
     border: 1px solid #FF900E;
     border-radius: 8px;
+    width: 250px;
+    height: 250pxs;
 }
 .facts-icon-counter{
     font-weight: 600;
@@ -137,6 +139,17 @@ nav div ul li{
     line-height: 23px;
 }
 
+/* Facts div hover effect */
+
+.facts-div:hover{
+    background: #FF900E;
+    transform: scale(1.20);
+    transition: transform .5s ease-in-out;
+}
+.facts-div:hover .facts-icon-counter, .facts-div:hover .facts-icon-para, .facts-div:hover .facts-icon img{
+    filter: grayscale(100%);
+    color: #fff;
+}
 
 /* Feature */
 .feature{
@@ -307,6 +320,17 @@ footer{
 
     /* Facts */
     
+    .facts-para, .facts-heading{
+        margin-right: 0px;
+        text-align: center;
+    }
+    .facts-div-container{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 
     /* sponser */
     .sponser-para{
